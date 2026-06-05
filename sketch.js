@@ -24,26 +24,24 @@ function login(password_storage, nickname_storage){
     if ( password_storage === null || nickname_storage === null){
         localStorage.setItem("username", nickname.value);
         localStorage.setItem("password", password.value);
-        alert("Nao achei o usuario, então eu criei!")
         imagem.src = "assets/content/media/Bothered Kuromi.jpg"
     } else {
-        alert("Achei o usuário!")
         if (password_storage === password.value && nickname_storage === nickname.value){
-            alert("Login com sucesso ;3")
             imagem.src = "assets/content/media/Happy Kuromi.jpg"
+            letra.textContent = "Login com sucesso!"
             loginError(modal);
         } else {
-            alert("senha ou usuário incorreto!")
             imagem.src = "assets/content/media/Scared Kuromi.jpg"
+            letra.textContent = "usuario/senha incorreto!"
             loginError(modal);
         }
     }
 }
 
 function loginError(modal){
-    modal.style.top = "0px"
+    modal.style.top = "60px"
 
     setTimeout(function() {
-        modal.style.top = "-100px"
-    }, 2200)
+        modal.style.top = "-200px"
+    }, 2500)
 };

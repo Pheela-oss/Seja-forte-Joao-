@@ -115,6 +115,7 @@ header div #Nickname, header div #Password {
     margin: 10px;
     margin-top: 0px;
     height: 80px;
+    font-size: 40px;
   }
 }
 header div #Nickname:hover, header div #Password:hover {
@@ -128,7 +129,7 @@ header div #Nickname:focus, header div #Password:focus {
 @media (width < 1000px) {
   header div h3 {
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 header div #Nickname {
@@ -157,9 +158,10 @@ header div button:focus {
 @media (width < 1000px) {
   header div button {
     width: 80%;
-    height: 60px;
+    height: 130px;
     left: 50%;
     transform: translate(-50%);
+    font-size: 80px;
   }
 }
 
@@ -206,7 +208,7 @@ header div button:focus {
   display: flex;
   position: fixed;
   left: 0;
-  top: -100px;
+  top: -300px;
   background: white;
   z-index: 10;
   width: 90%;
@@ -218,14 +220,31 @@ header div button:focus {
   box-sizing: border-box;
   border-radius: 40px 0px 40px 0px;
   padding-left: 40px;
+  font-size: 4cqh;
+  box-sizing: border-box;
+}
+@media (width < 1000px) {
+  .loginErrorMessages {
+    font-size: 1.3cqh;
+    height: 200px;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: caveat;
+    padding: 0;
+  }
 }
 .loginErrorMessages img {
   height: 100%;
   width: auto;
   aspect-ratio: 1/1;
 }
-.loginErrorMessages h1 {
-  font-size: 4cqh;
+@media (width < 1000px) {
+  .loginErrorMessages img {
+    height: 90%;
+  }
 }
 
 @keyframes neon {

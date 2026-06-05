@@ -110,6 +110,7 @@ header {
 				margin: 10px;
 				margin-top: 0px;
 				height: 80px;
+				font-size: 40px;
 			}
 
 			&:hover {
@@ -126,7 +127,7 @@ header {
 		h3 {
 			@media(width < 1000px){
 				text-align: center;
-				font-size: 50px;
+				font-size: 40px;
 			}
 		}
 
@@ -158,13 +159,15 @@ header {
 
 			@media(width < 1000px){
 				width: 80%;
-				height: 60px;
+				height: 130px;
 				left: 50%;
 				transform: translate(-50%);
+				font-size: 80px;
 			}
 		}
 	}
 }
+
 #background{
 	position: fixed;
 	z-index: -3;
@@ -204,7 +207,7 @@ header {
 	display: flex;
 	position: fixed;
 	left: 0;
-	top: -100px;
+	top: -300px;
 	background: white;
 	z-index: 10;
 	width: 90%;
@@ -216,15 +219,29 @@ header {
 	box-sizing: border-box;
 	border-radius: 40px 0px 40px 0px;
 	padding-left: 40px;
+	font-size: 4cqh;
+	box-sizing: border-box;
+
+	@media(width < 1000px){
+		font-size: 1.3cqh;
+		height: 200px;
+		left: 50%;
+		transform: translate(-50%);
+		margin: 0;
+		justify-content: center;
+		align-items: center;
+		font-family: caveat;
+		padding: 0;
+	}
 
 	img {
 		height: 100%;
 		width: auto;
 		aspect-ratio: 1/1;
-	}
 
-	h1 {
-		font-size: 4cqh;
+		@media(width < 1000px){
+			height: 90%;
+		}
 	}
 }
 
